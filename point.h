@@ -3,8 +3,8 @@
 
 typedef struct point point;
 struct point {
-   int x;
-   int y;
+   GLint x;
+   GLint y;
 };
 
 #endif /* POINT_H_ */
