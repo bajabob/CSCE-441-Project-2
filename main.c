@@ -28,7 +28,7 @@ mouse _mouse = { { 0, 0 }, false, false };
 
 bgColor _bgColor = { 0.5, 1.0, 1.0, 1.0 };
 
-poly _poly = { MODE_POINTS, WIDTH/2, HEIGHT/2 };
+poly _poly = { MODE_POINTS, WIDTH / 2, HEIGHT / 2 };
 
 void init( void )
 {
@@ -111,11 +111,13 @@ void onSpinDisplay( void )
 
 void onIdle( void )
 {
-	bool change = false;
 	if ( _spin.isSpinning )
 	{
-		change = true;
 		onSpinDisplay();
+		glutPostRedisplay();
+	}
+	if ( _mouse.isMiddlePressed )
+	{
 		glutPostRedisplay();
 	}
 }
@@ -215,6 +217,13 @@ void onMouse( int button, int state, int x, int y )
 
 void onMouseMove( int x, int y )
 {
+	if ( _mouse.isMiddlePressed )
+	{
+		_poly.x += x - _poly.x;
+		_poly.y += (HEIGHT - y) - _poly.y;
+
+	}
+
 	if ( _mouse.isLeftRightPressed )
 	{
 		int yDelta = _mouse.home.y - y;
