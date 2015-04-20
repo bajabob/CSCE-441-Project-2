@@ -15,6 +15,6 @@
 * When the user presses the middle mouse button, they should be able to pick up and drag the polygon in the window.  That is, when the user presses the middle mouse button (anywhere in the window, it does not need to be in the polygon itself), holds the mouse button down, moves the mouse, and releases the button, the polygon should “drag” by the distance/direction that the mouse moved.  Note that when you start spinning the polygon, it is OK for the polygon to spin around the center of the screen, rather than its own center
 
 ## Screenshots
-!(Filled Poly)[filled-cyan.png]
+![Filled Poly](filled-cyan.png)
 
-!(Outlined Poly)[outline-grey.png]
+![Outlined Poly](outline-grey.png)
