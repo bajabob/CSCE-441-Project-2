@@ -5,6 +5,17 @@
 * Type `make`
 * Run with `./main`
 
+### Controls
+* Press `c`, `m`, `y` or `w` to change the background color to cyan, magenta, yellow or white respectively.
+* Spin polygon left by pressing the left mouse button.
+* Spin polygon right by pressing the right mouse button.
+* Press `1` to display the polygon as a set of points.
+* Press `2` to display the polygon as a set of vertices.
+* Press `3` to fill the polygon.
+* While clicking the left mouse button drag your mouse up or down to increase or decrease the speed of the polygon rotation.
+* While clicking the left mouse button drag your mouse left or right to change the intensity of the background color.
+* Drag the polygon by pressing and dragging your middle mouse button.
+
 ### Guidelines
 * Make the polygon spin when the left mouse button is pressed down, but spin in the opposite direction when the right button is pressed down.
 * Make motion stop when the left/right mouse button is released, rather than when a different button is pressed.
